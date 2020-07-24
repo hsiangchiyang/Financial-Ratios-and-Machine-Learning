@@ -4,7 +4,16 @@ We want to build a machine learning model to analyze the strength of the relatio
 
 ## Background:
 
+We are inspired by __The Big Short: Inside the Doomsday Machine__ and wondering if there exists certain pattern in the financial statements in the years prior to 2008 that could be found to reflect the failure or survival of a company during the economic crisis by using the exciting technology like machine learning model.
+
 ### Concept formulation
+
+Originally, the main target is to create an machine learning model which could determine whether a company would have failed in 2008 based on the variables from previous years financial statements. 
+
+However, it is hard to decide the actual duration of the economic crisis that companies could have declared bankruptcy before or after 2008. In advance, there is no justifications on whether the companies which needed the aid from the government to survive should be counted as the failure cases. 
+
+Therefore, instead of training the machine learning model on whether a company would have failed, we decide to train the model to determine the performance of the company by the stock price comparison during the period from 2000-2020. 
+
 
 ### Initial attempts
 
