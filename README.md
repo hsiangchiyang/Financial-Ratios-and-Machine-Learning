@@ -2,18 +2,20 @@
 ## Goal
 We want to build a machine learning model to analyze the strength of the relationship between the well-known 13 financial ratios and the historical stock price of companies from 2000 to 2020.
 
-## Background:
+## Early concept development:
 
 We are inspired by __The Big Short: Inside the Doomsday Machine__ and wondering if there exists certain pattern in the financial statements in the years prior to 2008 that could be found to reflect the failure or survival of a company during the economic crisis by using the exciting technology like machine learning model.
 
-### Concept formulation
+Originally, the main target was to create a machine learning model which could determine whether a company would have failed in 2008 based on the variables in three key financial statements from 2000 to 2007
 
-Originally, the main target is to create an machine learning model which could determine whether a company would have failed in 2008 based on the variables from previous years financial statements. 
+The first challenge was to determine a method to measure the survival or failure of companies from the 2008 recession. Therefore, we selected 14 companies commonly cited in the news media as companies and 30 companies that we deemed as successfully surviving the 2008 economic crisis. 
 
-However, it is hard to decide the actual duration of the economic crisis that companies could have declared bankruptcy before or after 2008. In advance, there is no justifications on whether the companies which needed the aid from the government to survive should be counted as the failure cases. 
+This approach raises several issues.  First, we realized that the “death” of a group of 14 companies is extremely hard for us to determine. For example, since AIG survived due to the government bailout, we considered it a failure precisely because it required the massive bailout. However, many banks, which didn’t want government oversight, had to accept the bailout packages from the government. Moreover, Tribune Company was often cited as one that failed because of the 2008 recession, but it failed in 2007 partially due to the changing market condition (more digital news services).
 
-Therefore, instead of training the machine learning model on whether a company would have failed, we decide to train the model to determine the performance of the company by the stock price comparison during the period from 2000-2020. 
+The second problem was that there were too many differences among companies in their respective financial statements, which were already plagued with variations in terms of their reporting. There were so many missing data points that it was extremely difficult to determine comparable variables.
+The third problem was that most failures were those of financial institutions. This points to the self-evident fact that the 2008 recession was triggered by the failures in the financial sector. It is possible to safely and reasonably assume what led to the failures of these companies, thus making the whole purpose of this experiment rather trivial.
 
+However, despite these problems, we decided to move forward with this initial concept to see whether the approach could yield some insight for us. Neither of us tried to apply the machine learning to the financial analysis.
 
 ### Initial attempts
 
