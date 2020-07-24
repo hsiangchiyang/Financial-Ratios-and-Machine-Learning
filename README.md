@@ -15,7 +15,7 @@ This approach raises several issues.  First, we realized that the “death” of
 The second problem was that there were too many differences among companies in their respective financial statements, which were already plagued with variations in terms of their reporting. There were so many missing data points that it was extremely difficult to determine comparable variables.
 The third problem was that most failures were those of financial institutions. This points to the self-evident fact that the 2008 recession was triggered by the failures in the financial sector. It is possible to safely and reasonably assume what led to the failures of these companies, thus making the whole purpose of this experiment rather trivial.
 
-However, despite these problems, we decided to move forward with this initial concept to see whether the approach could yield some insight for us. Neither of us tried to apply the machine learning to the financial analysis.
+However, despite these problems, we decided to move forward with this initial concept to see whether the approach could yield some insight for us. Neither of us tried to apply the machine learning to the financial analysis. We expected that we would not come up with a better model or a more suitable algorithm unless we started with some rudimentary concepts about machine learning and its potential relations to financials. Below is the chronicle of our initial attempt with one of the well-known machine learning model: Support Vector Machine (SVM).
 
 ### Initial attempts
 
