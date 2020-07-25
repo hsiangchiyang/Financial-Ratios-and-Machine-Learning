@@ -18,7 +18,7 @@ The third problem was that most failures were those of financial institutions. T
 
 However, despite these problems, we decided to move forward with this initial concept to see whether the approach could yield some insights for us. Neither of us tried to apply the machine learning to the financial analysis. We expected that we would not come up with a better model or a more suitable algorithm unless we started with some rudimentary concepts about machine learning and its potential relations to the important financials. Below is the chronicle of our initial attempt with one of the well-known machine learning model: Support Vector Machine (*SVM*).
 
-### Initial attempts
+### Chronicle
 
 June 3, 2020 - June 17, 2020:
 
