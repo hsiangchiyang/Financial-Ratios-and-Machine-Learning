@@ -18,7 +18,7 @@ The third problem was that most failures were those of financial institutions. T
 
 However, despite these problems, we decided to move forward with this initial concept to see whether the approach could yield some insights for us. Neither of us tried to apply the machine learning to the financial analysis. We expected that we would not come up with a better model or a more suitable algorithm unless we started with some rudimentary concepts about machine learning and its potential relations to the important financials. Below is the chronicle of our initial attempt with one of the well-known machine learning model: Support Vector Machine (*SVM*).
 
-## Chronicle
+## Chronicle:
 
 June 3, 2020 - June 17, 2020:
 
@@ -37,6 +37,7 @@ Second, instead of creating a label on whether a company survived or failed in t
 
 As a result, the total number of raw observations increased to over 10,000. There was no significant improvement in accuracy as it averaged in the range of 54-55%. However, the effort here was not fruitless. The main purpose of the iteration is to clarify and refine our problem space and try to acquire more and better raw data.
 
+## Concepts:
 
 ## Prepare Data:
 
