@@ -82,3 +82,7 @@ As a result, the total number of raw observations increased to over 10,000. Ther
         
 4. Calculate the average prcc_c based on previous years for each observation
 5. Create the binary label/Mask 0 or 1 whether the next year prcc_c is higher than the average_prcc_c
+
+## Model Building:
+
+## Analysis:
