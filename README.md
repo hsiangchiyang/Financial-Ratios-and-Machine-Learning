@@ -20,6 +20,24 @@ However, despite these problems, we decided to move forward with this initial co
 
 ### Initial attempts
 
+June 3, 2020 - June 17, 2020:
+
+After looking through several public financial databases, we chose EDGARD as our primary source of data. https://www.sec.gov/edgar/searchedgar/companysearch.html. Then, we extracted necessary financials to calculate the annual 13 economic ratios (details explained in Process data) as the feature variables for machine learning and manually create a binary label to describe whether a company survived (1) or failed (0). For instance, each entry consists of 13 ratios and the label indicating whether the company survives the 2008 recession.
+
+The observations were divided into 70% for training and 30% for testing. In the iteration, the SVM was selected as the machine learning model for several reasons. First, SVM performs effectively when it comes to classification with multiple features. Second, SVM has been widely used in financial industries while observing the pattern of moving average of financial factors such as stock price and equity estimate, so SVM could be effectively used with our selected feature variables.
+
+However, the accuracy produced by the model was merely around 52-53%, which we deemed would not provide minimal predictive value. Moreover, we realized that no standard method exists to tell whether the company survived in the following year. This led us to create the survival binary label based on some subjective or, even, arbitrary factors (i.e. public perception, media portrayal).
+
+June 22, 2020:
+
+After the first attempt, we considered two major changes as priorities for improvement in the next iteration.
+First, we decided to change the primary source of data to WRDS because it can provide us with a metadata balance sheet through 2000-2020 containing all US companies listed in S&P 500 and Dow Jones (list_companies.txt). The WRDS provides all the info needed to generate feature variables while allowing us to extract all of necessary data without going through each company’s financial statements. It has also allowed us to import all the raw data as one file and process them all together. Lastly, we can customize the dataset with the WRDS with much-needed flexibility.
+ 
+Second, instead of creating a label on whether a company survived or failed in the upcoming year, our new binary label is set as the performance of a company in the upcoming year by directly comparing upcoming stock prices with average from previous years. With the performance of stock price as the main target, the change mitigates the issue of uncertainty over the binary label, which we could not tell whether the labels were marked correctly and equally in the previous iteration. Also, as the comparison of stock prices could be modulated by the algorithm, the tiring manual labelling process is no longer required.
+
+As a result, the total number of raw observations increase to over 10000. There was no significant improvement in accuracy as it averaged in the range of 54-55%. However, the effort here was not fruitless. The main purpose of the iteration is to clarify and refine our problem space and try to acquire more and better raw data.
+
+
 ## Prepare Data:
 
 1. Database
