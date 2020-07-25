@@ -1,5 +1,8 @@
 # Financial-Ratios-and-their-Relation-to-Historical-Stock-Price-Trend
-## Goal
+
+## Abstract:
+
+## Goal:
 We want to build a machine learning model to analyze the strength of the relationship between the well-known 13 financial ratios and the historical stock price of companies from 2000 to 2020.
 
 ## Early concept development:
@@ -86,3 +89,5 @@ As a result, the total number of raw observations increased to over 10,000. Ther
 ## Model Building:
 
 ## Analysis:
+
+## Conclusion:
