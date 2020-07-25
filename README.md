@@ -35,7 +35,7 @@ First, we decided to change the primary source of data to WRDS because it can pr
  
 Second, instead of creating a label on whether a company survived or failed in the upcoming year, our new binary label is set as the performance of a company in the upcoming year by directly comparing upcoming stock prices with average from previous years. With the performance of stock price as the main target, the change mitigates the issue of uncertainty over the binary label, which we could not tell whether the labels were marked correctly and equally in the previous iteration. Also, as the comparison of stock prices could be modulated by the algorithm, the tiring manual labelling process is no longer required.
 
-As a result, the total number of raw observations increase to over 10000. There was no significant improvement in accuracy as it averaged in the range of 54-55%. However, the effort here was not fruitless. The main purpose of the iteration is to clarify and refine our problem space and try to acquire more and better raw data.
+As a result, the total number of raw observations increase to over 10,000. There was no significant improvement in accuracy as it averaged in the range of 54-55%. However, the effort here was not fruitless. The main purpose of the iteration is to clarify and refine our problem space and try to acquire more and better raw data.
 
 
 ## Prepare Data:
