@@ -38,7 +38,21 @@ First, we decided to change the primary source of data to WRDS because it can pr
  
 Second, instead of creating a label on whether a company survived or failed in the upcoming year, our new binary label is set as the performance of a company in the upcoming year by directly comparing upcoming stock prices with average from previous years. With the performance of stock price as the main target, the change mitigates the issue of uncertainty over the binary label, which we could not tell whether the labels were marked correctly and equally in the previous iteration. Also, as the comparison of stock prices could be modulated by the algorithm, the tiring manual labelling process is no longer required.
 
-As a result, the total number of raw observations increased to over 10,000. There was no significant improvement in accuracy as it averaged in the range of 54-55%. However, the effort here was not fruitless. The main purpose of the iteration is to clarify and refine our problem space and try to acquire more and better raw data.
+As a result, the total number of raw observations has increased to over 10,000. There was no significant improvement in accuracy as it averaged in the range of 54-55%. Moreover, since we could not see the internal of the SVM for R (Blackbox), we could not determine the causes for such low accuracies. However, the effort here was not fruitless. The main purpose of the iteration is to clarify and refine our problem space and try to acquire more and better raw data. 
+ 
+July 11, 2020:
+
+In order to improve the accuracy of assessing the connection between the financial indicators of a company and its stock performance, we decided to use the neuralnet package (‘NN’) in the iteration. The main reason for switching the model was due to the fact that the NN provides more customization options while training the model compared to the SVM package. Nevertheless, there was still no significant improvement in accuracy as it still averaged in the range of 55-57%.
+
+July 14, 2020:
+
+One factor that was missing in earlier attempts was a time dimension for the model. The decision to exclude them in previous attempts was deliberate because we first wanted to learn how the NN works. Adding time to the NN was a necessary step, but we deemed that we could add it later once we got familiar with the NN. When the NN produced similar results to the SVM, we decided to add a time variable to the NN. The new approach was to use the annual ratios from all three years prior to the target year instead of only one year. This led to the range of 60-62% accuracies on the testing dataset.
+
+July 20, 2020
+In order to further improve the model structure, we decided to add more advanced selection on the feature variables used. Instead of selecting all 13 different ratios as the feature variables, the model would randomly pick three ratios out for each model and observe what the ratios each of them could produce with the higher accuracies. As a result, we uncovered the ratios that generate the models with the range of 68-72% accuracies on the testing dataset.
+
+July 22, 2020
+The only remaining issue was the long processing time which sometimes takes over eight-to-nine hours while training all required models through the single CPU core. Therefore, parallel programming for R was implemented to access multi-cored computing power which could dramatically shorten the runtime to less than two hours when utilizing 8- cores/16-threads CPU.
 
 ## Concepts:
 
