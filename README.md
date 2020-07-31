@@ -48,10 +48,12 @@ July 14, 2020:
 
 One factor that was missing in earlier attempts was a time dimension for the model. The decision to exclude them in previous attempts was deliberate because we first wanted to learn how the NN works. Adding time to the NN was a necessary step, but we deemed that we could add it later once we got familiar with the NN. When the NN produced similar results to the SVM, we decided to add a time variable to the NN. The new approach was to use the annual ratios from all three years prior to the target year instead of only one year. This led to the range of 60-62% accuracies on the testing dataset.
 
-July 20, 2020
+July 20, 2020:
+
 In order to further improve the model structure, we decided to add more advanced selection on the feature variables used. Instead of selecting all 13 different ratios as the feature variables, the model would randomly pick three ratios out for each model and observe what the ratios each of them could produce with the higher accuracies. As a result, we uncovered the ratios that generate the models with the range of 68-72% accuracies on the testing dataset.
 
-July 22, 2020
+July 22, 2020:
+
 The only remaining issue was the long processing time which sometimes takes over eight-to-nine hours while training all required models through the single CPU core. Therefore, parallel programming for R was implemented to access multi-cored computing power which could dramatically shorten the runtime to less than two hours when utilizing 8- cores/16-threads CPU.
 
 ## Concepts:
