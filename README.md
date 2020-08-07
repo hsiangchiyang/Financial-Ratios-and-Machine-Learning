@@ -104,7 +104,7 @@ The only remaining issue was the long processing time which sometimes takes over
 
 ## Model Building:
 
-## Brief This project is not to reveal that ROA is the best measure of a company’s stock performance. Instead, we aim to see how machine learning in R operates with some important financial indicators. We have discovered that ROA is far more relevant in measuring the company’s stock performance. There are, of course, a few caveats. The most obvious is that we are NOT able to see the neural network’s internal workings in the R package. It is essentially a black box. We are expected to assume that the model is working correctly. There is no way to confirm or deny the validity of the model itself. Lastly, the whole project has been our learning experience. Neither of us is a professional in machine learning. However, we find it highly relatable to how we are living now.Analysis:
+## Analysis:
 
 In our multiple runs, ROA has been consistently the most frequent. No other ration comes close to the level of frequency of ROA. This begs the question of why. 
 
@@ -115,4 +115,3 @@ As noted above, ROA may not be the best indicator when comparing the performance
 ## Conclusion:
 
 This project is not to reveal that ROA is the best measure of a company’s stock performance. Instead, we aim to see how machine learning in R operates with some important financial indicators. We have discovered that ROA is far more relevant in measuring the company’s stock performance. There are, of course, a few caveats. The most obvious is that we are NOT able to see the neural network’s internal workings in the R package. It is essentially a black box. We are expected to assume that the model is working correctly. There is no way to confirm or deny the validity of the model itself. Lastly, the whole project has been our learning experience. Neither of us is a professional in machine learning. However, we find it highly relatable to how we are living now.
-
