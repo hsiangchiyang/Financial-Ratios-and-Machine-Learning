@@ -104,6 +104,15 @@ The only remaining issue was the long processing time which sometimes takes over
 
 ## Model Building:
 
-## Analysis:
+## Brief This project is not to reveal that ROA is the best measure of a company’s stock performance. Instead, we aim to see how machine learning in R operates with some important financial indicators. We have discovered that ROA is far more relevant in measuring the company’s stock performance. There are, of course, a few caveats. The most obvious is that we are NOT able to see the neural network’s internal workings in the R package. It is essentially a black box. We are expected to assume that the model is working correctly. There is no way to confirm or deny the validity of the model itself. Lastly, the whole project has been our learning experience. Neither of us is a professional in machine learning. However, we find it highly relatable to how we are living now.Analysis:
+
+In our multiple runs, ROA has been consistently the most frequent. No other ration comes close to the level of frequency of ROA. This begs the question of why. 
+
+ROA is calculated by dividing a company’s net income by total assets. ROA demonstrates how profitable a company is relative to its total assets. In other words, this indicator is about the efficiency of the company’s use of assets. The higher the ROA, the more efficient use of assets. Because ROA varies among industries, it is better to compare companies within a similar industry. The total assets are the sum of total liabilities and equity. Thus, for example, taking more debt may lead to a lower ROA unless there is a higher net income that outweighs both interest expenses that decrease net income and the addition of debts themselves. The major issue with ROA is that it cannot be used well across different industries because the use of assets widely varies among industries.
+
+As noted above, ROA may not be the best indicator when comparing the performance of asset efficiency. However, our model is not about comparing one company against another. The basis of the model is to compare the company’s ROA’s indicators to its stock performance, not against other companies. 
 
 ## Conclusion:
+
+This project is not to reveal that ROA is the best measure of a company’s stock performance. Instead, we aim to see how machine learning in R operates with some important financial indicators. We have discovered that ROA is far more relevant in measuring the company’s stock performance. There are, of course, a few caveats. The most obvious is that we are NOT able to see the neural network’s internal workings in the R package. It is essentially a black box. We are expected to assume that the model is working correctly. There is no way to confirm or deny the validity of the model itself. Lastly, the whole project has been our learning experience. Neither of us is a professional in machine learning. However, we find it highly relatable to how we are living now.
+
