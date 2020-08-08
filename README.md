@@ -106,7 +106,9 @@ Reason for switching from SVM to NN:
 Based on the article ‘The Scuffle Between Two Algorithms -Neural Network vs. Support Vector Machine,’ there are multiple techniques (such as backpropagation, adjusting the number of hidden layers and neurons per hidden layer, etc.) which allows NN to perform better than SVM over time. Among all the techniques, using different hidden layers structures to create NN models and testing with data is one of our main approaches. Moreover, as we can apply the changes toward the hidden layers with the NN package found, the current decision is to set NN as the main model choice.
 
 Reference:  
+
 Manikandan Jeeva, “The Scuffle Between Two Algorithms -Neural Network vs. Support Vector Machine.” https://medium.com/analytics-vidhya/the-scuffle-between-two-algorithms-neural-network-vs-support-vector-machine-16abe0eb4181
+
 “What are the advantages of Artificial Neural Networks over Support Vector Machines?” https://www.pico.net/kb/advantages-of-artificial-neural-networks-over-support-vector-machines#:~:text=More%20work%20in%20feature%20engineering,sometime%20miss%20the%20global%20picture.
  
 Neural Network:
