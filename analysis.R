@@ -15,7 +15,7 @@ library(lme4)
 
 #set the working directory from which the files will be read from
 setwd("PATH OF WORKDIR")
-load("results_01.RData")
+load("results.RData")
 load("time_data.RData")
 
 # accuracy helper
